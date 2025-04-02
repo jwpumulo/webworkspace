@@ -96,7 +96,7 @@
         }
 
         this.products.push(obj);
-        //this.products[this.products.length] = obj;
+        //this.products[this.products.length] = obj; 
       }
     },
     watch: {

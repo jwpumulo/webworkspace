@@ -1,11 +1,13 @@
 <template>
   <nav>
-    <!--호출태그-->
+    <!--호출태그 to=href -->
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/dataBinding">DataBind</router-link> |
-    <router-link v-bind:to="{ name : 'listBind'}">ListBind</router-link> | 
-    <router-link v-bind:to="{ name : 'ifBind'}">IfBind</router-link> | 
+    <router-link v-bind:to="{ name : 'listBind'}">listBind</router-link> | 
+    <router-link v-bind:to="{ name : 'ifBind'}">ifBind</router-link> | 
+    <router-link v-bind:to="{ name : 'onEvent'}">onEventt</router-link> |  
+    <router-link v-bind:to="{ name : 'comWat'}">comWat </router-link> |  
   </nav>
   <router-view />
   <hr>

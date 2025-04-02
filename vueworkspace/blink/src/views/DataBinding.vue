@@ -9,7 +9,7 @@
     <h2 v-text="title" id="home"></h2>
     <p v-html="tagList"></p> <!-- inner html 속성 변경-->
     <p v-text="tagList" v-bind:name="tagName"></p> <!-- bind directive 가장 기본이 되는 디렉티브 name은 태크가 가지고 있는 속성-->
-    <!-- -------------- v-bind 디렉티브: 단방향 바인딩------------------------>
+    <!-- --------------- v-bind 디렉티브: 단방향 바인딩----------------------->
     <!------------------ v-model 디렉티브: 양방향 바인딩---------------------->
     <input type="text" v-model="valueModel">
     <p> {{ valueModel + 1000 }}, {{ typeof valueModel }}</p>
@@ -68,7 +68,6 @@
         city: [],
         hobby: '',
         styleData: {
-
           //'background-color' : 'skyblue',
           backgroundColor: 'skyblue',
           width: '200px',

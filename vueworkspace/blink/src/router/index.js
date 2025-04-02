@@ -9,6 +9,8 @@ import HomeView from '../views/HomeView.vue'
 import DataBinding from '@/views/DataBinding.vue'
 import ListBinding from '@/views/ListBinding.vue'
 import IfBinding from '@/views/IfBinding.vue'
+import OnEvent from '@/views/OnEvent.vue'
+import ComputedWatch from '@/views/ComputedWatch.vue'
 
 
 
@@ -29,7 +31,7 @@ const routes = [ //실제 화면에 출력할 컴포넌트
     component: () => import( /* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
 
-  
+
 
   {
     path: '/dataBinding', //접속 경로
@@ -37,7 +39,7 @@ const routes = [ //실제 화면에 출력할 컴포넌트
     component: DataBinding //출력할 컴포넌트
   },
 
-  
+
   {
     path: '/listBinding', //접속 경로
     name: 'listBind', // 라우터 이름
@@ -48,7 +50,22 @@ const routes = [ //실제 화면에 출력할 컴포넌트
     path: '/ifBinding', //접속 경로
     name: 'ifBind', // 라우터 이름
     component: IfBinding //출력할 컴포넌트
-  }
+  },
+
+  {
+    path: '/onEvent', //접속 경로
+    name: 'onEvent', // 라우터 이름
+    component: OnEvent //출력할 컴포넌트
+  },
+
+  {
+    path: '/computedWatch', //접속 경로
+    name: 'comWat', // 라우터 이름
+    component: ComputedWatch //출력할 컴포넌트
+  },
+
+
+
 
 ]
 
